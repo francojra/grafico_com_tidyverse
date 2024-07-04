@@ -43,7 +43,13 @@ tabela <- data %>%
   drop_na() %>%
   summarise(Media = mean(massa),
             DP = sd(massa),
-            Mediana =  median(massa))
+            Mediana =  median(massa),
+            N = n(),
+            EP = DP/sqrt(N))
 tabela
 View(tabela)
+
+# Gráfico ----------------------------------------------------------------------------------------------------------------------------------
+
+ggplot(tabela, aes(x = sexo_biologico, y = Media))
 
