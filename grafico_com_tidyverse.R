@@ -7,6 +7,7 @@
 
 library(tidyverse)
 library(dados)
+library(psych)
 
 # Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
@@ -21,11 +22,16 @@ glimpse(data)
 summary(data$altura)
 summary(data$massa)
 
-# Funções describe() e describeBy() -  Média, desvio, erro, mediana, skew, kurtosis, etc. --------------------------------------------------
+## Funções describe() e describeBy() -  Média, desvio, erro, mediana, skew, kurtosis, etc. 
 
-describe(dados$N_Filhos)
+describe(data$altura)
+describe(data$massa)
 
-describeBy(dados$Salario, group = dados$Genero)
+describeBy(data$altura, group = data$genero)
+describeBy(data$altura, group = data$especie)
+
+describeBy(data$massa, group = data$genero)
+describeBy(data$massa, group = data$especie)
 
 describeBy(dados$Salario, group = dados$Genero:dados$Grau_de_Instruçao)
 
