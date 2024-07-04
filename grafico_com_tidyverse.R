@@ -12,3 +12,4 @@ library(dados)
 
 data <- dados::dados_starwars
 view(data)
+glimpse(data)
