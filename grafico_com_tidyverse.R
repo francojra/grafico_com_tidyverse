@@ -51,5 +51,10 @@ View(tabela)
 
 # Gráfico ----------------------------------------------------------------------------------------------------------------------------------
 
-ggplot(tabela, aes(x = sexo_biologico, y = Media))
+ggplot(tabela, aes(x = sexo_biologico, y = Media)) +
+  geom_col() +
+  geom_errorbar(aes(ymin = Media - EP, ymax = Media + EP),
+                size = 0.8, width = 0.2) +
+  labs(y = "Altura (cm)", x = "Sexo Biológico") +
+  theme_bw()
 
