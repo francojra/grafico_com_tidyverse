@@ -36,7 +36,7 @@ describeBy(data$massa, group = data$especie)
 describeBy(data$altura, group = data$cor_do_cabelo)
 describeBy(data$massa, group = data$nome)
 
-# Função group_by do pacote dplyr ----------------------------------------------------------------------------------------------------------
+## Função group_by do pacote dplyr 
 
 tabela <- data %>%
   group_by(sexo_biologico) %>%
