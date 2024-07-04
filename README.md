@@ -1,2 +1,7 @@
 # Gráfico com tidyverse
-Exemplo de um gráfico usando alguns pacotes do tidyverse.
+
+## Gráficos com tidyverse
+## Autoria do script: Jeanne Franco
+## Data: 03/07/24
+
+### Tópicos do script
