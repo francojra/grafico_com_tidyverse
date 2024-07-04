@@ -10,4 +10,5 @@ library(dados)
 
 # Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
-dados::dados_starwars
+data <- dados::dados_starwars
+view(data)
