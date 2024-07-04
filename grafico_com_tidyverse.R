@@ -33,7 +33,8 @@ describeBy(data$altura, group = data$especie)
 describeBy(data$massa, group = data$genero)
 describeBy(data$massa, group = data$especie)
 
-describeBy(dados$Salario, group = dados$Genero:dados$Grau_de_Instruçao)
+describeBy(data$altura, group = data$cor_do_cabelo)
+describeBy(data$massa, group = data$nome)
 
 # Função group_by do pacote dplyr ----------------------------------------------------------------------------------------------------------
 
