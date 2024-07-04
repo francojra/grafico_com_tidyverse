@@ -38,11 +38,12 @@ describeBy(data$massa, group = data$nome)
 
 # Função group_by do pacote dplyr ----------------------------------------------------------------------------------------------------------
 
-tabela <- dados %>%
-  group_by(Genero, Grau_de_Instruçao) %>%
-  summarise(Media = mean(Salario),
-            DP = sd(Salario),
-            Mediana =  median(Salario))
+tabela <- data %>%
+  group_by(sexo_biologico) %>%
+  drop_na() %>%
+  summarise(Media = mean(massa),
+            DP = sd(massa),
+            Mediana =  median(massa))
 tabela
 View(tabela)
 
