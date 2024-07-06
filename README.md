@@ -13,3 +13,5 @@
 - Funções describe() e describeBy()
 - Função group_by do pacote dplyr
 4. Gráfico
+- Gráfico de barras
+- Gráfico de dispersão
