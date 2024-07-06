@@ -54,7 +54,7 @@ View(tabela)
 ggplot(tabela, aes(x = sexo_biologico, y = Media)) +
   geom_col(fill = "#345632") +
   geom_errorbar(aes(ymin = Media - EP, ymax = Media + EP),
-                size = 0.8, width = 0.2) +
+                size = 0.9, width = 0.1) +
   labs(y = "Altura (cm)", x = "Sexo Biológico") +
   theme_bw()
 
