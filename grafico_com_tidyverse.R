@@ -68,6 +68,6 @@ d <- data %>%
 view(d)
 
 ggplot(d, aes(x = altura, y = massa)) +
-  geom_point(color = "#345632") +
+  geom_point(color = "#345632", size = 2.7) +
   labs(y = "Massa (kg)", x = "Altura (cm)") +
   theme_bw()
