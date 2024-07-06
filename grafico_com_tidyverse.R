@@ -59,7 +59,8 @@ ggplot(tabela, aes(x = sexo_biologico, y = Media)) +
   theme_bw()
 
 d <- data %>%
-  filter(massa < 500)
+  filter(massa < 500) %>%
+  drop_na()
 view(d)
 
 ggplot(d, aes(x = altura, y = massa)) +
