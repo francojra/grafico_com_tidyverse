@@ -58,3 +58,10 @@ ggplot(tabela, aes(x = sexo_biologico, y = Media)) +
   labs(y = "Altura (cm)", x = "Sexo Biológico") +
   theme_bw()
 
+d <- data %>%
+  filter(altura)
+
+ggplot(data, aes(x = altura, y = massa)) +
+  geom_point(color = "#345632") +
+  labs(y = "Altura (cm)", x = "Sexo Biológico") +
+  theme_bw()
