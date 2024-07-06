@@ -51,12 +51,16 @@ View(tabela)
 
 # Gráfico ----------------------------------------------------------------------------------------------------------------------------------
 
+## Gráfico de barras
+
 ggplot(tabela, aes(x = sexo_biologico, y = Media)) +
   geom_col(fill = "#345632") +
   geom_errorbar(aes(ymin = Media - EP, ymax = Media + EP),
                 size = 0.9, width = 0.1) +
   labs(y = "Altura (cm)", x = "Sexo Biológico") +
   theme_bw()
+
+## Gráfico de dispersão
 
 d <- data %>%
   filter(massa < 500) %>%
@@ -65,5 +69,5 @@ view(d)
 
 ggplot(d, aes(x = altura, y = massa)) +
   geom_point(color = "#345632") +
-  labs(y = "Altura (cm)", x = "Sexo Biológico") +
+  labs(y = "Massa (kg)", x = "Altura (cm)") +
   theme_bw()
